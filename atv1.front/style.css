@@ -1,0 +1,56 @@
+body { 
+  background-color: rgb(54, 165, 165); 
+  margin: 0;
+  padding: 20px;
+  font-family: sans-serif;
+} 
+
+.titulo {
+  margin-top: 30px;
+  text-align: center; 
+  color: white; 
+  font-family: "Black Ops One", system-ui; 
+  font-weight: 400; 
+  font-style: normal; 
+} 
+
+/* Estilo base dos cartões de texto */
+.wiwi { 
+  background-color: rgb(207, 219, 217);
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 20px;
+  width: 100%; /* Ocupa a largura total do espaço dele */
+  min-height: 200px; /* Evita que o texto vaze se for grande */
+} 
+
+/* Centraliza apenas o primeiro bloco do topo */
+.wiwi.principal {
+  max-width: 600px;
+  margin: 30px auto; /* Centraliza na tela automaticamente */
+}
+
+h2 {
+  margin-top: 30px;
+  text-align: center; 
+  color: white; 
+  font-family: "Black Ops One", system-ui; 
+  font-weight: 400; 
+  font-style: normal;   
+  font-size: 1.5rem;
+}
+
+/* CONTAINER FLEXBOX: Alinha as 3 colunas lado a lado */
+.colunas-container {
+  display: flex;
+  justify-content: center; /* Centraliza o grupo na tela */
+  gap: 20px;               /* Espaço entre as colunas */
+  max-width: 1200px;       /* Limita a largura máxima do site */
+  margin: 0 auto;          /* Centraliza o container */
+}
+
+/* Estilo individual de cada uma das 3 colunas */
+.coluna-item {
+  flex: 1;                 /* Força as 3 colunas a terem o mesmo tamanho */
+  max-width: 400px;        /* Evita que fiquem esticadas demais em telas gigantes */
+}
